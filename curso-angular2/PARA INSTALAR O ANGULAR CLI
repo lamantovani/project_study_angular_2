@@ -1,0 +1,34 @@
+PARA INSTALAR O ANGULAR CLI
+==> npm install -g angular-cli
+
+PARA CRIAR UM PROJETO 
+==> ng new NomeProjeto
+==> cd NomeProjeto 
+==> ng server // para subir o projeto
+
+PARA CONFIGURAR COMO SERVIDOR IRA SUBIR
+==> ng server --port 4201 --live-reload-port 49153
+
+PARA SUBIR O SERVIDOR NODEJS
+==> ng server start npm
+==> ng server
+
+PARA CRIAR UM SERVIÇO
+==> ng g service 'diretorio/nome' 
+==> ng g s 'diretorio/nome'
+
+CRIAR PROJETO 
+==> ng new 'nome_do_projeto'
+
+INSTALAR BOOTSTRAP NG2-BOOTSTRAP
+==> npm install ng2-bootstrap bootstrap --save
+==> 
+
+CRIAR COMPONENTES COM ANGULAR CLI
+==> ng g c 'nome_do_componente'
+
+PARA CRIAR PROJETO COM OPROCESSADORES DE CSS
+==> ng new meu-projeto --syle=sass
+
+===== 25 fim
+
