@@ -1,0 +1,16 @@
+<h1>
+  <i class="glyphicon" [class.glyphicon-star-empty]="!menuFavorito" 
+  [class.glyphicon-star]="menuFavorito" (click)="onMenuFavorito()" >
+  </i>
+</h1>
+
+
+<h1>
+  <i class="glyphicon" 
+  [ngClass]="{
+    'glyphicon-star-empty': !menuFavorito,
+    'glyphicon-star': menuFavorito
+  }"
+  (click)="onMenuFavorito()" >
+  </i>
+</h1>

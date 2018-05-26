@@ -10,3 +10,18 @@
   <p *ngSwitchCase="'lista'" >Modo Lista ativo</p>
   <p *ngSwitchDefault>home</p>
 </div>
+
+<div class="container" [ngSwitch]="aba" >
+  <template [ngSwitchCase] = "'mapa'">
+    <p>Modo Mapa ativo</p>
+  </template>
+
+  <template [ngSwitchCase] = "'lista'">
+    <p>Modo Lista ativo</p>
+  </template>
+
+  <template [ngSwitchCase] = "'home'" ngSwitchDefault >
+    <p>Home</p>
+  </template>
+
+</div>
