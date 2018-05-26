@@ -1,0 +1,12 @@
+
+<ul class="nav nav-pills">
+  <li role="presentation" [class.active] = "aba == 'home'"><a (click) = "aba = 'home'" >Home</a></li>
+  <li role="presentation" [class.active] = "aba == 'lista'"><a (click) = "aba = 'lista'">Lista</a></li>
+  <li role="presentation" [class.active] = "aba == 'mapa'"><a (click) = "aba = 'mapa'">Mapa</a></li>
+</ul>
+
+<div class="container" [ngSwitch]="aba" >
+  <p *ngSwitchCase="'mapa'" >Modo Mapa ativo</p>
+  <p *ngSwitchCase="'lista'" >Modo Lista ativo</p>
+  <p *ngSwitchDefault>home</p>
+</div>
