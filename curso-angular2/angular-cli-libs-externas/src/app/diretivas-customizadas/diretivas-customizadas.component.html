@@ -14,3 +14,20 @@
   <p [highlight]="'green'" [defaultColor]="'grey'" >
       Texte highltght com corres customizadas
   </p>
+
+
+  <div *ngIf="mostrarCursos" >
+    Lista de curos
+  </div>
+  
+  <div *ngElse="mostrarCursos" >
+    Não existem cursos para serem listados.
+  </div>
+  
+  <button (click)="onMostrarCursos()">Mostra Cursos</button>
+
+  <template [ngElse]="mostrarCursos" >
+    <div>
+      Não exsitem cursos para serem listador.
+    </div>
+  </template>
